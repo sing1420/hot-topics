@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #fff;
+	color: #dc0000;
+}
+
+body{
+	color: #dc0000;
+	font-size: 1rem;
+	margin: 0;
+	line-height: 1.5;
+}
+
+header {
+    width: 100%;
+    background-color: #dc0000;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header img{
+    max-height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+header a{
+	margin-right: 10px;
+	color: #fff;
+}
+
+footer{
+	padding: 0 5%;
+    color: #dc0000;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+footer #second{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer a{
+	color: #dc0000;
+}
+
+h1,h2,h3{
+	font-family: 'Libre Baskerville', serif;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.masthead{
+	background-image: url('../img/bg.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #c0cee4;
+	color: #dc0000;
+	padding: 4rem 2rem;
+    text-align: center;
+}
+
+.main-content{
+	max-width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.main-content button{
+	background-color: transparent;
+	border: 1px solid;
+	border-color: #dc0000;
+	color: #dc0000;
+	height: 2rem;
+	margin-right: 0.5rem;
+}
+
+.main-content button#active-button{
+	background-color: #dc0000;
+	color: #fff;
+}
+
+div#portfolio{
+display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 12px 12px;
+    grid-template-areas:
+        "g1"
+        "g2"
+        "g3"
+        "g4"
+        "g5"
+        "g6";
+}
+
+div#portfolio figure{
+	margin: 0;
+}
+
+div#portfolio figcaption{
+	text-align: center;
+}
+
+/*desktop*/
+@media (min-width: 60rem) {
+	body{
+		font-size: 1.5rem;
+	}
+
+
+div#portfolio{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px 12px;
+    grid-template-areas:
+        "g1 g2"
+        "g3 g4"
+        "g5 g6";
+}
+
+	#first{
+		display: inline-block;
+	    width: 40%;
+	    padding-bottom: 0;
+	    padding-right: 4%;
+	    float: left;
+	}
+
+
+	#second{
+		width: 100%;
+	}
+
+}
+
+@media (min-width: 80rem) {
+
+
+	div#portfolio{
+		display: grid;
+	    grid-template-columns: 1fr 1fr 1fr;
+	    grid-template-rows: 1fr 1fr;
+	    gap: 12px 12px;
+	    grid-template-areas:
+	        "g1 g2 g3"
+	        "g4 g5 g6";
+	}
+}
